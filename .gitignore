@@ -1,0 +1,7 @@
+# Terraform & Yandex
+*.tfstate
+*.tfstate.backup
+.terraform/
+service-account-key.json
+*.key
+*.pem
