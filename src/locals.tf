@@ -5,6 +5,6 @@ locals {
   # Общие метаданные для всех ВМ
   vms_metadata = {
     serial-port-enable = "1"
-    ssh-keys           = "ubuntu:${var.vms_ssh_public_root_key}"
+    ssh-keys = format("ubuntu:%s", var.vms_ssh_public_root_key)
   }
 }
